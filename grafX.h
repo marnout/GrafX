@@ -6,6 +6,7 @@ compile:
 g++ testGrafX.cpp grafX.cpp -o testGrafX -lX11 -std=c++11 -Wfatal-errors
 Source: http://www.nd.edu/~dthain/courses/cse20211/fall2011/gfx
 Licence: GNU-GPL
+http://grognon.net/grafx.html
 20/09/2015
 */
 
