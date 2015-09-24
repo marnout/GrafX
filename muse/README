@@ -1,0 +1,3 @@
+Muse uses file format inspired by lilypond and display a staff. Each note is symbilized by a line where the duration is relative to the length.
+
+Muse is an application of GrafX class.
