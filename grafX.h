@@ -51,6 +51,8 @@ public:
 	// Check to see for an event is waiting
 	int event_waiting();
 	// wait for the user to press a key or mouse button
+	// the result is the key char or 1, 2, 3 button pressed
+	// (saved_xpos, saved_ypos) : mouse pointer
 	char wait();
 	// Change the title of the window
 	void nameWindow(string);
@@ -64,6 +66,7 @@ protected:
 	GC      		gc;
 	Colormap 	colormap;
 	int fast_color_mode = 1;
+	// mouse pointer coordinate after wait
 	int saved_xpos = 0;
 	int saved_ypos = 0;
 };
