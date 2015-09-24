@@ -1,0 +1,32 @@
+GrafX is a simple X11 graphics library meant to be easy to learn, and quick to use..
+The goal is to pop up a X11 window, and draw some graphics in it.
+GraphX runs only on linux using X11 windows, perhaps on Mac.
+
+
+USAGE
+
+1. Include the library 
+	#include "grafX.h"
+
+2. Create a window
+	GrafX gx;
+	gx.open(600, 400, "Test GrafX");
+	// Where 600 is the width, 400 is the height and 
+	// "Test GrafX" is the title of the window
+
+3. Draw
+	gx.line(x1, y1, x2, y2);
+	gx.lineto(x, y);
+	gx.rectangle(x, y width, height);
+	gx.point(x, y);
+
+4. Colors
+	// set the pen color 
+	gx.color(n_red, n_green, n_blue); 
+
+4. Compile
+	g++ grafX.o testGrafX.cpp -o testGrafX -std=c++11 -lX11
+
+For Further informations please read th grafX.h file
+
+
